@@ -210,18 +210,21 @@ public class Lab2_JuanGuevara {
                                 nuevaSalud = ejercitoAleman.get(i).getResistencia() - ataque;
                                 ejercitoAleman.get(i).setResistencia(nuevaSalud);
                             }
-                            System.out.println("Muerto: ");
+
                             if (ejercitoAleman.get(i).getResistencia() <= 0) {
                                 muertos.add(ejercitoAleman.get(i));
                                 ejercitoAleman.remove(i);
                             }
                         }
 
-                        for (int i = 0; i < muertos.size(); i++) {
-                            System.out.println(muertos.get(i));
-                        }
                     } while (!ejercitoAleman.isEmpty());
-
+                    System.out.println("Muerto: ");
+                    for (int i = 0; i < muertos.size(); i++) {
+                        System.out.println(muertos.get(i));
+                    }
+                    System.out.println("Rusia Gana");
+                    System.out.println();
+                    System.out.println();
             }
 
         } while (opcion != 6);
@@ -337,9 +340,9 @@ public class Lab2_JuanGuevara {
                         int tipoArma = 100;
                         while (tipoArma < 1 || tipoArma > 3) {
                             System.out.println("Arma del soldado:");
-                            System.out.println("1. AK-47");
-                            System.out.println("2. Revolver Navant");
-                            System.out.println("3. RPG-7");
+                            System.out.println("1. MP 40");
+                            System.out.println("2. Ametralladora MG42");
+                            System.out.println("3. Pistolas Walther P38");
                             tipoArma = sc.nextInt();
                             switch (tipoArma) {
                                 case 1:
@@ -407,9 +410,9 @@ public class Lab2_JuanGuevara {
                         int tipoArma = 100;
                         while (tipoArma < 1 || tipoArma > 3) {
                             System.out.println("Arma del alumno:");
-                            System.out.println("1. AK-47");
-                            System.out.println("2. Revolver Navant");
-                            System.out.println("3. RPG-7");
+                            System.out.println("1. Discos Duros");
+                            System.out.println("2. Controles de Wii");
+                            System.out.println("3. Laptops");
                             tipoArma = sc.nextInt();
                             switch (tipoArma) {
                                 case 1:
