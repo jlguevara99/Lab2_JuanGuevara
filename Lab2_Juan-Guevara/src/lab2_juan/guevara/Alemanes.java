@@ -26,6 +26,11 @@ public class Alemanes {
         this.poder = poder;
     }
 
+    @Override
+    public String toString() {
+        return "Alemanes{" + "alias=" + alias + ", edad=" + edad + ", casta=" + casta + ", resistencia=" + resistencia + ", arma=" + arma + ", poder=" + poder + '}';
+    }
+
     public void setPoder(int poder) {
         this.poder = poder;
     }

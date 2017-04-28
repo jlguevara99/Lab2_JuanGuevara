@@ -27,8 +27,9 @@ public class Lab2_JuanGuevara {
             System.out.println("1. Agregar Rusos");
             System.out.println("2. Agregar Alemanes");
             System.out.println("3. Agregar Alumnos");
-            System.out.println("4. Simular");
-            System.out.println("5. Salir");
+            System.out.println("4. Modificar ejercito");
+            System.out.println("5. Simular");
+            System.out.println("6. Salir");
             opcion = sc.nextInt();
             switch (opcion) {
                 case 1:
@@ -68,6 +69,7 @@ public class Lab2_JuanGuevara {
                                     if (edad < 25) {
                                         tipoArma = 100;
                                         System.out.println("Muy joven para RPG-7");
+                                        System.out.println("Ingrese de nuevo");
                                     }
                                     arma = "RPG-7";
                                     poder = 57;
@@ -173,6 +175,9 @@ public class Lab2_JuanGuevara {
                         System.out.println("Desea Ingresar otro alumno?  [s/n]");
                         seguir = sc.next().charAt(0);
                     } while (seguir == 's');
+                    break;
+                case 4:
+                  
             }
 
         } while (opcion != 5);

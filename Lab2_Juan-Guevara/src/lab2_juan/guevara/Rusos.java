@@ -32,6 +32,11 @@ public class Rusos {
         return nombre;
     }
 
+    @Override
+    public String toString() {
+        return "Rusos{" + "nombre=" + nombre + ", ID=" + ID + ", edad=" + edad + ", resistencia=" + resistencia + ", arma=" + arma + ", rango=" + rango + ", poder=" + poder + '}';
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
