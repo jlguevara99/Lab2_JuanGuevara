@@ -28,8 +28,10 @@ public class Alemanes {
 
     @Override
     public String toString() {
-        return "Alemanes{" + "alias=" + alias + ", edad=" + edad + ", casta=" + casta + ", resistencia=" + resistencia + ", arma=" + arma + ", poder=" + poder + '}';
+        return "Alemanes{" + "alias=" + alias + '}';
     }
+
+    
 
     public void setPoder(int poder) {
         this.poder = poder;

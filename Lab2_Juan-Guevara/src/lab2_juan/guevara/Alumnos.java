@@ -34,8 +34,10 @@ public class Alumnos {
 
     @Override
     public String toString() {
-        return "Alumnos{" + "apodo=" + apodo + ", NmoCuenta=" + NmoCuenta + ", edad=" + edad + ", resistencia=" + resistencia + ", GradAcademico=" + GradAcademico + ", arma=" + arma + ", poder=" + poder + '}';
+        return "Alumnos{" + "apodo=" + apodo + '}';
     }
+
+    
 
     public void setPoder(int poder) {
         this.poder = poder;
