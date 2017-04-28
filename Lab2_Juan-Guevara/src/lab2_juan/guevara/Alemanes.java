@@ -15,13 +15,23 @@ public class Alemanes {
     public String casta;
     public int resistencia;
     public String arma;
+    public int poder;
 
-    public Alemanes(String alias, int edad, String casta, int resistencia, String arma) {
+    public Alemanes(String alias, int edad, String casta, int resistencia, String arma, int poder) {
         this.alias = alias;
         this.edad = edad;
         this.casta = casta;
         this.resistencia = resistencia;
         this.arma = arma;
+        this.poder = poder;
+    }
+
+    public void setPoder(int poder) {
+        this.poder = poder;
+    }
+
+    public int getPoder() {
+        return poder;
     }
 
     public String getAlias() {

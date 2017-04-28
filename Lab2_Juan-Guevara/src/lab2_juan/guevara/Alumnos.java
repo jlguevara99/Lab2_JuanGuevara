@@ -16,14 +16,24 @@ public class Alumnos {
     public int resistencia;
     public String GradAcademico;
     public String arma;
+    public int poder;
 
-    public Alumnos(String apodo, int NmoCuenta, int edad, int resistencia, String GradAcademico, String arma) {
+    public Alumnos(String apodo, int NmoCuenta, int edad, int resistencia, String GradAcademico, String arma, int poder) {
         this.apodo = apodo;
         this.NmoCuenta = NmoCuenta;
         this.edad = edad;
         this.resistencia = resistencia;
         this.GradAcademico = GradAcademico;
         this.arma = arma;
+        this.poder = poder;
+    }
+
+    public int getPoder() {
+        return poder;
+    }
+
+    public void setPoder(int poder) {
+        this.poder = poder;
     }
 
     public String getApodo() {

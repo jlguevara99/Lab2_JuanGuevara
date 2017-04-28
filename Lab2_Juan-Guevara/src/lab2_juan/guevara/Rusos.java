@@ -16,14 +16,16 @@ public class Rusos {
     public int resistencia;
     public String arma;
     public String rango;
+    public int poder;
 
-    public Rusos(int edad, int ID, String nombre, int resistencia, String arma, String rango) {
+    public Rusos(int edad, int ID, String nombre, int resistencia, String arma, String rango, int poder) {
         this.edad = edad;
         this.ID = ID;
         this.nombre = nombre;
         this.resistencia = resistencia;
         this.arma = arma;
         this.rango = rango;
+        this.poder = poder;
     }
 
     public String getNombre() {
@@ -72,6 +74,14 @@ public class Rusos {
 
     public void setRango(String rango) {
         this.rango = rango;
+    }
+
+    public int getPoder() {
+        return poder;
+    }
+
+    public void setPoder(int poder) {
+        this.poder = poder;
     }
     
     
